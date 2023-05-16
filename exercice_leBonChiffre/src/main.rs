@@ -13,45 +13,17 @@ fn main() {
     while loop_jeux == 0 {
         let choix_menu: i32 = menu_principal();
 
-        if choix_menu == 1{
-            difficulte = choix_difficulte();
-        } else if choix_menu == 2{
-            lancer_jeux(difficulte);
-        } else if choix_menu == 3{
-            quitter_programme();
-        } else {
-            println!("erreur choix du menu");
-        }
+       // A COMPLETER
     }
 
     /* MENU */
     fn menu_principal() -> i32{
-        println!("1, choix de la difficulte");
-        println!("2, lancer le jeux");
-        println!("3, quitter le programme");
-
-        let mut choix_utilisateur: i32 = input::<i32>().get();
-        while choix_utilisateur != 1 && choix_utilisateur != 2 && choix_utilisateur != 3 {
-            println!("Merci d'entrer un nombre valide entre 1 et 3.");
-            choix_utilisateur = input::<i32>().get();
-        }
-
-        return choix_utilisateur;
+        // A COMPLETER
     }
 
     /* CHOIX DIFFICULTE */
     fn choix_difficulte() -> i32{
-        println!("1, entre 1 et 10");
-        println!("2, entre 1 et 100");
-        println!("3, entre 1 et 1000");
-        
-        let mut choix_utilisateur: i32 = input::<i32>().get();
-        while choix_utilisateur != 1 && choix_utilisateur != 2 && choix_utilisateur != 3 {
-            println!("Merci d'entrer un nombre valide entre 1 et 3.");
-            choix_utilisateur = input::<i32>().get();
-        }
-
-        return choix_utilisateur
+        // A COMPLETER
     }
 
     /* LOOP DU JEUX */
@@ -80,12 +52,11 @@ fn main() {
         while trouver == 0{
 
             if choix_utilisateur == number_rand {
-                println!("trouve, le chiffre était bien: {number_rand}");
-                return ;
+               // A COMPLETER
             } else if choix_utilisateur < number_rand {
-                println!("le chiffre est plus grand");
+               // A COMPLETER
             } else if choix_utilisateur > number_rand {
-                println!("le chiffre est plus petit");
+                // A COMPLETER
             } else {
                 println!("erreur lors de la validation du bon chiffre");
             }
